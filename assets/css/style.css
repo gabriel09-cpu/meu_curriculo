@@ -1,0 +1,28 @@
+*{
+   font-family: "Google Sans Code", monospace;
+  box-sizing: border-box;
+  
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 25px;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+}
+
+.nome{
+    display: flex;
+    justify-content: center;
+}
+
+.paragrafo{
+    display: flex;
+    justify-content: center;
+}
