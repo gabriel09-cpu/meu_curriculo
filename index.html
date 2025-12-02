@@ -1,71 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gabriel Pedro</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/img/minhalogo.jpg"
+      type="image/x-icon"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gabriel Pedro</title>
-  <link rel="stylesheet" href="/assets/css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Science+Gothic:wght@100..900&display=swap"
-    rel="stylesheet">
-</head>
+  <body>
+    <div class="container">
+      <a id="instagram" href="https://instagram.com" target="_blank">
+        <img src="assets/img/instagram.png" alt="Instagram" />
+      </a>
+      <a id="linkedin" href="https://linkedin.com" target="_blank">
+        <img src="assets/img/linkedin.png" alt="linkedin" />
+      </a>
+    </div>
 
-<body>
-
-<div class="container">
-
-  <a id="instagram" href="instagram.com" target="_blank">
-    <img src="assets/img/instagram.png" alt="Instagram" />
-  </a>
-  <a id="container" href="linkedin.com"><img src="assets/img/linkedin.png" alt="linkedin" /></a>
-</div>
-
-  <br />
-
-  <p>Oi, eu me chamo</p>
-  <h1 class="nome">Gabriel Pedro</h1>
-  <p class="paragrafo">
-    Sou desenvolvedor de sistemas iniciante, cheio de ambições, sonhos e muita
-    vontade de aprender. Estou buscando oportunidades de crescimento. Ajudar é
-    meu compromisso, e o conhecimento é o meu maior objetivo.
-  </p>
-  <br>
-
-  <div class="sobre-mim">
-
-    <button type="submit">Clique aqui! Me envie um email!</button>
-    <br>
-    <h2>Sobre mim:</h2>
-    <p class="paragrafo">
-      Estudo programação há 1 ano e meio, sempre buscando aperfeiçoar meus
-      conhecimentos e me preparando para ingressar no ensino superior logo após
-      finalizar o técnico. <br /><br />
-      Trabalho como Aprendiz de Desenvolvimento de Sistemas e atualmente
-      desempenho atividades de suporte técnico na empresa. Nascido em Recife -
-      PE, sempre tive interesse por computadores e tecnologia. <br /><br />
-      Mesmo tendo tido contato tardio com a área, isso nunca foi uma barreira.
-      Minha mente obstinada por conhecimento sempre me levou a aprender e a me
-      aperfeiçoar em tudo.
+    <p class="texto">Oi, eu me chamo</p>
+    <h1 class="nome">Gabriel Pedro</h1>
+    <p class="texto">
+      Sou desenvolvedor de sistemas iniciante, cheio de ambições, sonhos e muita
+      vontade de aprender. Estou buscando oportunidades de crescimento. Ajudar é
+      meu compromisso, e o conhecimento é o meu maior objetivo.
     </p>
-  </div>
-  <img class="minhafoto" src="/assets/img/minha_foto.jpg" alt="minha_foto" width="300">
-  <br>
-  <div class="minha-experienci">
-    <h2>Experiencias e participações:</h2>
+    <br />
+    <button class="botao-email">Clique aqui! Me envie um email!📩</button>
+    <br />
+    <div class="sobre-container">
+      <div class="sobre-mim">
+        <h2>Sobre mim:</h2>
 
-    <ul>
-      <li>SobVéu</li>
-      <li>Calculadora</li>
-    </ul>
-  </div>
+        <p class="texto">
+          Estudo programação há 1 ano e meio, sempre buscando aperfeiçoar meus
+          conhecimentos e me preparando para ingressar no ensino superior logo
+          após finalizar o técnico.
+        </p>
 
-  <footer class="rodape">Feito por Gabriel Bezerra usando HTML, CSS e Javascript
-    <br>
-    © Todos os direitos reservados.
-  </footer>
-</body>
+        <p class="texto">
+          Trabalho como Aprendiz de Desenvolvimento de Sistemas e atualmente
+          exerço atividades de suporte técnico na empresa. Nascido em Recife -
+          PE, sempre tive interesse por computadores e tecnologia.
+        </p>
 
+        <p class="texto">
+          Mesmo tendo tido contato tardio com a área, isso nunca foi uma
+          barreira. Minha mente obstinada por conhecimento sempre me impulsionou
+          a aprender e a me aperfeiçoar em tudo.
+        </p>
+      </div>
+
+      <img
+        class="minhafoto"
+        src="/assets/img/minha_foto.jpg"
+        alt="minha foto"
+      />
+    </div>
+
+    <h2>Experiências e participações:</h2>
+    <div class="container-menu">
+      <ul class="menu">
+        <li onclick="mostrarConteudo('sobveu')">SobVéu</li>
+        <li onclick="mostrarConteudo('calculadora')">Calculadora</li>
+      </ul>
+    </div>
+
+    <div id="conteudo" class="conteudo">
+      <h2></h2>
+      <p></p>
+    </div>
+
+    <footer class="rodape">
+      Feito por Gabriel Bezerra usando HTML, CSS e Javascript<br />
+      © Todos os direitos reservados.
+    </footer>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
