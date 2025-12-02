@@ -108,7 +108,10 @@
   flex: 1;
 }
 
-
+.exp{
+  display: flex;
+  justify-content: center;
+}
 
 /* Experiências
 .minha-experiencia {
