@@ -22,7 +22,7 @@
 }
 
 .container img:hover{
-  transform: scale(1.2);
+  transform: scale(1.5);
   box-shadow: 0 0 8 #fff3;
 }
 
