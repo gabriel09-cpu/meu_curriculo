@@ -6,7 +6,7 @@
   color: #ddd;
 }
 
-/* Container dos ícones */
+
 .container {
   display: flex;
   justify-content: center;
@@ -26,22 +26,19 @@
   box-shadow: 0 0 8 #fff3;
 }
 
-/* Texto principal */
 .texto {
   text-align: center;
-  line-height: 1.4; /* reduzido para ficar mais junto */
+  line-height: 1.4; 
   max-width: 800px;
-  margin: 10px auto; /* aproxima os textos */
+  margin: 10px auto; 
 }
 
-/* Nome */
 .nome {
   text-align: center;
   font-size: 2.4rem;
   margin-bottom: 10px;
 }
 
-/* Botão */
 .botao-email {
   display: block;
   margin: 15px auto;
@@ -50,7 +47,6 @@
   cursor: pointer;
 }
 
-/* FOTO + SOBRE MIM LADO A LADO */
 .sobre-container {
   display: flex;
   justify-content: center;
@@ -61,7 +57,6 @@
   padding: 10px;
 }
 
-/* Ajuste da foto */
 .minhafoto {
   width: 280px;
   border-radius: 12px;
@@ -125,24 +120,6 @@
   justify-content: center;
 }
 
-/* Experiências
-.minha-experiencia {
-  max-width: 900px;
-  margin: 20px auto;
-  padding: 10px;
-}
-
-.minha-experiencia h2 {
-  margin-bottom: 10px;
-}
-
-.minha-experiencia ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-} */
-
-/* Rodapé */
 .rodape {
   margin-top: 30px;
   padding: 15px;
@@ -153,17 +130,100 @@
 @media (max-width: 600px) {
   .texto {
     font-size: 0.95rem;
-    line-height: 1.25; /* mais perto ainda no mobile */
+    line-height: 1.25; 
     margin: 8px auto;
+    padding: 0 12px;
   }
 
   .nome {
     font-size: 2rem;
+    padding: 0 12px;
   }
 
   .sobre-mim,
   .minha-experiencia {
     padding: 5px;
+  }
+
+  .sobre-container {
+    padding: 0 12px;
+  }
+
+
+  .container-menu {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0 12px;
+    gap: 12px;
+  }
+
+  .menu {
+    width: 100%;
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu li {
+    flex: 1 0 auto;
+    padding: 10px 12px;
+    margin-bottom: 0;
+    background: #292929;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.95rem;
+    white-space: nowrap;
+  }
+
+  .menu li:hover {
+    transform: translateY(-1px);
+  }
+
+  .conteudo {
+    margin: 10px 12px;
+    padding: 14px;
+    font-size: 0.95rem;
+  }
+
+  .conteudo h2 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  .conteudo p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .exp {
+    padding: 0 12px;
+  }
+
+ 
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .container-menu,
+  .conteudo,
+  .menu {
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .menu li {
+    min-width: 0;
+    flex: 0 1 auto;
+  }
+
+  .texto,
+  .conteudo {
+    max-width: 100%;
   }
 }
 
@@ -174,4 +234,17 @@ button {
 
 body{
   background-color: #1D7BC2;
+}
+
+.conteudo,
+.conteudo p {
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+  hyphens: auto;
+  white-space: normal;
+}
+
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
 }
