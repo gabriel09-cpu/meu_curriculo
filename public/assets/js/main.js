@@ -38,7 +38,18 @@ function mostrarConteudo(secao) {
     <p>(...) Mais em Breve!</p>
     `,
 
-    
+  finace: `<h2>DEZ 2025 -FEV 2026</h2>
+  <h5>Projeto - Finace Tracker</h5>
+  <br>
+  <p>Finace Tracker, é um gerenciador financeiro, que tem como
+  função principal auxiliar no nosso controle pessoal de gastos
+  mensais e anuais.</p>
+  <br>
+  <p> > Comecei com um prototipo simples. Apenas um app de terminal
+   Com funções para: Adicionar Transações, Listar transações,
+   Listar por mês, Listar por Tipo etc
+   <p>(...) Mais em Breve!</p>` 
+  
   };
 
   conteudo.innerHTML = textos[secao];
