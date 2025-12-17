@@ -41,13 +41,31 @@ function mostrarConteudo(secao) {
   finace: `<h2>DEZ 2025 -FEV 2026</h2>
   <h5>Projeto - Finace Tracker</h5>
   <br>
-  <p>Finace Tracker, é um gerenciador financeiro, que tem como
-  função principal auxiliar no nosso controle pessoal de gastos
-  mensais e anuais.</p>
+  <p>Uma aplicação de terminal(CLI) 
+  para controle simples de finanças pessoais, 
+  permitindo registrar gastos e ganhos, 
+  listar transações e gerar relatórios financeiros, 
+  usando SQLAlchemy e SQLite.</p>
   <br>
-  <p> > Comecei com um prototipo simples. Apenas um app de terminal
-   Com funções para: Adicionar Transações, Listar transações,
-   Listar por mês, Listar por Tipo etc
+  <h4> > Funcionalidades:</h4>
+  <br>
+  <p> - <span class ="sp">Cadastrar novas transações</span> com descrição, categoria, tipo(ganho, gasto) e valor.</p>
+  <br>
+  <p> - Filtrar transações por <span class ="sp">mês</span> ou <span class ="sp">categoria</span>.</p>
+  <br>
+  <p> - Gerar <span class ="sp">resumo finaceiro total</span>(ganhos, gastos e saldo).</p>
+  <br>
+  <p> - Gerar <span class ="sp">resumo finaceiro mensal</span>, de acordo com o <span class ="sp">mês informado</span>.</p>
+  <br>
+  <p> - Deletar transação pelo id.</p>
+  <br>
+  <h4>Tecnologias Usadas: </h4>
+  <br>
+  <p> - Python 3.13</p>
+  <p> - SQLite com Banco de Dados local</p>
+  <p> - SQLAlchemy(ORM) para o mapeamento de Objeto Relacional</p>
+  <p> - Pytz para controler de fuso horário na gravação das datas das transações</p>
+
    <p>(...) Mais em Breve!</p>` 
   
   };
