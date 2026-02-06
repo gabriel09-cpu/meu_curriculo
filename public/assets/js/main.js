@@ -18,26 +18,6 @@ function mostrarConteudo(secao) {
 
     `,
 
-    calculadora: `<h2>DEZ 2025 - FEV 2026</h2>
-    <h5>Projeto Calculadora</h5>
-    <p> > Calculator: Criei a classe pai Calculator, 
-    que é um modelo de uma calculadora real, 
-    que efetua calculos com dois termos x e y. </p>
-    <br>
-    <p> > Controller: Criei o controtroller para ser a ponte,
-    entre a calculadora e a Interface gráfica.</p>
-    <br>
-    <p> > UI: Classe CalculatorUI, que é responsável por criar e
-    gerenciar a interface gráfica da calculadora.</p>
-
-    <br>
-    <p> > Main: Ponto de partida do programa. 
-    Junta todos os arquivos e executa o programa</p>
-
-    <br>
-    <p>(...) Mais em Breve!</p>
-    `,
-
   finace: `<h2>DEZ 2025 -FEV 2026</h2>
   <h5>Projeto - Finace Tracker</h5>
   <br>
