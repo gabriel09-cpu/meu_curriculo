@@ -1,16 +1,4 @@
-function mostrarConteudo(secao) {
-  const itens = document.querySelectorAll(".menu li");
-  const conteudo = document.getElementById("conteudo");
-
-  itens.forEach((li) => li.classList.remove("ativo"));
-
-  const itemAtivo = document.querySelector(`[onclick*="${secao}"]`);
-  if (itemAtivo) {
-    itemAtivo.classList.add("ativo");
-  }
-
-  const textos = {
-    sobveu: `<h2>SET 2025 - DEZ 2025</h2>
+ sobveu: `<h2>SET 2025 - DEZ 2025</h2>
 <h5>Projeto SobVéu - Site E-commerce para venda de vestidos de noiva</h5>
 <p> > Estruturei rotas de API para o CRUD de produtos.</p>
 <br>
@@ -22,7 +10,7 @@ function mostrarConteudo(secao) {
 
     `,
 
-    finace: `<h2>DEZ 2025 -FEV 2026</h2>
+  finace: `<h2>DEZ 2025 -FEV 2026</h2>
   <h5>Projeto - Finace Tracker</h5>
   <br>
   <p>Uma aplicação de terminal(CLI) 
@@ -50,9 +38,9 @@ function mostrarConteudo(secao) {
   <p> - SQLAlchemy(ORM) para o mapeamento de Objeto Relacional</p>
   <p> - Pytz para controler de fuso horário na gravação das datas das transações</p>
 
-   <p>(...) Mais em Breve!</p>`,
+   <p>(...) Mais em Breve!</p>`, 
 
-    toDoList: `<h2>MAR 2026</h2>
+   toDoList: `<h2>MAR 2026</h2>
     <p>Aplicativo mobile desenvolvido com 
     React Native utilizando Expo, 
     com o objetivo de gerenciar tarefas 
@@ -76,18 +64,5 @@ function mostrarConteudo(secao) {
    <p> - Async Storage </p>
    <p> - Vector Icons(Ionicons) </p>
 
-   `,
-  };
-
-  conteudo.innerHTML = textos[secao];
-}
-
-function mandarEmail() {
-  window.open(
-    "https://mail.google.com/mail/?view=cm&fs=1&to=g.pedro0972@gmail.com&su=Contato%20pelo%20site&body=Olá%20Gabriel!",
-  );
-}
-
-window.addEventListener('DOMContentLoaded', () => {
-  mostrarConteudo("sobveu");
-});
+   `
+   
