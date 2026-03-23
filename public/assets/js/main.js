@@ -46,7 +46,34 @@ function mostrarConteudo(secao) {
   <p> - SQLAlchemy(ORM) para o mapeamento de Objeto Relacional</p>
   <p> - Pytz para controler de fuso horário na gravação das datas das transações</p>
 
-   <p>(...) Mais em Breve!</p>` 
+   <p>(...) Mais em Breve!</p>`, 
+
+   toDoList: `<h2>MAR 2026</h2>
+    <p>Aplicativo mobile desenvolvido com 
+    React Native utilizando Expo, 
+    com o objetivo de gerenciar tarefas 
+    simples (to-do list), 
+    permitindo adicionar e 
+    persistir tarefas localmente.</p>
+    <br>
+   <h4>Funcionalidades:</h4>
+   <br>
+   <p> - Adicionar <span class="sp">Tarefas</span></p>
+   <p> - Registro da <span class="sp">data da tarefa</span> </p>
+   <p> - Remover <span class="sp">Tarefas</span> </p>
+   <p> - <span class="sp">Marcar Tarefas</span> como concluídas </p>
+   <p> - Separação entre <span class="sp">Tarefas Pendentes</span> e <span class="sp">Concluídas</span> </p>
+   <p> - Persistência de Dados com <span class="sp">Armazenamento Local</span></p>
+   <br>
+   <h4>Tecnologias Utilizadas</h4>
+   <p> - React Native </p>
+   <p> - Expo </p>
+   <p> - React Navigation </p>
+   <p> - Async Storage </p>
+   <p> - Vector Icons(Ionicons) </p>
+
+   `
+   
   
   };
 
